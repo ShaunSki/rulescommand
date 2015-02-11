@@ -1,3 +1,5 @@
 Drop the rulescommand-master into your Addons folder.
 You can change the config by going into lua/rulescommand/sh_config.lua
 Feel free to email me at shaunskigmod@hotmail.com if you have any problems/requests.
+OR!
+Here's my steam profile: http://steamcommunity.com/id/ShaunSkis/
