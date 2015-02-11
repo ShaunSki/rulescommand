@@ -5,7 +5,7 @@
 --include( "shared.lua" )
 
 --Server + Border Config
-ServerName = "ShaunSki's Sandbox Rules" -- Put in your rules title / servername
+ServerName = "Rules" -- Put in your rules title / servername
 ServerNameColor = Color( 0, 255, 0, 255 ) -- Red, Green, Blue, Transparency -- Your server name color!
 LineColor = Color( 0, 255, 0, 255 ) -- Red, Green, Blue, Transparency -- Color for the line underneath server name!
 BackgroundColor = Color( 0, 0, 0, 255 ) -- Red, Green, Blue, Transparency -- Color for the background!
@@ -16,7 +16,7 @@ ImagePath = "materials/vgui/garrysmod.png" -- Enter your image FilePath; e.g. ma
 
 -- Commands Config
 -- What to type to open the rules menu?
-OpenRulesOnJoin = true
+OpenRulesOnJoin = false
 OpenRulesPlayerSay = { "!rules", "/rules" }
 
 -- Rules Config
