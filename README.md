@@ -1,4 +1,5 @@
-# rulescommand
+# rulescommand - Free Garry's Mod Addon.
+
 Garry's Mod Rules Command
 You can open it by typing !rules once added to your server!
 Fear not! Everything is configurable!
