@@ -12,7 +12,7 @@ BackgroundColor = Color( 50, 50, 50, 255 ) -- Red, Green, Blue, Transparency -- 
 
 -- Image Config
 -- Shows Image on rulesmenu.
--- Will also download any material you add if the player hasn't got it.
+-- Will also automatically download any material you add if the player hasn't got it.
 ImagePath = "materials/vgui/garrysmod.png" -- Enter your image FilePath; e.g. materials/spawnicons/models/effects/splode.png -- Doesn't need to be in materials folder can use whatever.
 
 -- Commands Config

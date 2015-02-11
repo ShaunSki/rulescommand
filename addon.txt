@@ -1,9 +1,0 @@
-"AddonInfo"
-{
-        "name"              "Rules Command"
-        "version"           "1.0"
-        "author_name"       "ShaunSki"
-        "author_email"      ""
-        "info"              "A simple Rules Command"
-        "override"          "0"
-}

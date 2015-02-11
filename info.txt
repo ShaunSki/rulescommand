@@ -1,0 +1,12 @@
+"AddonInfo"
+{
+	"name" "Rules Command Addon!"
+	"author_name" "ShaunSki"
+	"info" ""
+{
+	"description": "If you need help contact shaunskigmod@hotmail.com or see my profile: http://steamcommunity.com/id/ShaunSkis/",
+	"type": "servercontent",
+	"tags": 
+	[]
+}"
+}
