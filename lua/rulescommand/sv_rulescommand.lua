@@ -1,4 +1,7 @@
 -- Created By ShaunSki.
+AddCSLuaFile("sh_config.lua")
+AddCSLuaFile("cl_rulesmenu.lua")
+
 include( "rulescommand/sh_config.lua" )
 include( "rulescommand/cl_rulesmenu.lua" )
 -- Commands --
