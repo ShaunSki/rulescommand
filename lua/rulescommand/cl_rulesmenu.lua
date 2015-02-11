@@ -3,7 +3,7 @@
 include( "sh_config.lua" ) -- Includes the config file. (Don't remove this important.)
 -- Derma --
 
-local function RulesMenu() -- Function!
+function RulesMenu() -- Function!
 	local ShaunSki = "Rules by ShaunSki and Mark Jones"
 	local Frame = vgui.Create( "DFrame" ) -- Creating DFrame as Frame for short.
 	Frame:SetSize( ScrW() - 350, ScrH() - 100 ) -- The size of the menu.
