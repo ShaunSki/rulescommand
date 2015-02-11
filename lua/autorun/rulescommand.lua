@@ -1,4 +1,3 @@
--- Created By ShaunSki
 -- This allows the files to work together instead of seperate.
 
 if SERVER then

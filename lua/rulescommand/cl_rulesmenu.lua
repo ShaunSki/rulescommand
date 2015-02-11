@@ -4,7 +4,7 @@ include( "sh_config.lua" ) -- Includes the config file. (Don't remove this impor
 -- Derma --
 
 function RulesMenu() -- Function!
-	local ShaunSki = "Rules Menu -- Created By ShaunSki"
+	local ShaunSki = "Rules by ShaunSki and Mark Jones"
 	local Frame = vgui.Create( "DFrame" ) -- Creating DFrame as Frame for short.
 	Frame:SetSize( ScrW() - 350, ScrH() - 100 ) -- The size of the menu.
 	Frame:SetTitle( ShaunSki ) -- Does it have a title?
@@ -12,7 +12,7 @@ function RulesMenu() -- Function!
 	Frame:SetDraggable( false ) -- Is it draggable?
 	Frame:ShowCloseButton( true ) -- Is it closable?
 	Frame:MakePopup() -- Pop it up!
-	Frame:Center() -- Center of screen
+	Frame:Center() -- Center of screen!
 	Frame.Paint = function()
 		draw.RoundedBox( 1, 2, 2, Frame:GetWide()-4, Frame:GetTall()-4, Color( 65, 65, 65, 255 ) ) -- Draw our menu!
 		draw.RoundedBox( 1, 0, 0, Frame:GetWide()-0, Frame:GetTall()-0, BackgroundColor ) -- Draw Background color!
