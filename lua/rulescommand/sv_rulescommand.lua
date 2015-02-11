@@ -1,6 +1,6 @@
 -- Created By ShaunSki.
-include( "sh_config.lua" )
-include( "cl_rulesmenu.lua" )
+include( "rulescommand/sh_config.lua" )
+include( "rulescommand/cl_rulesmenu.lua" )
 -- Commands --
 -- Creates our !rules command!
 resource.AddFile( ImagePath ) -- Adds image for download!
