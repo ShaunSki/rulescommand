@@ -1,9 +1,12 @@
 -- Created By ShaunSki.
+AddCSLuaFile("sh_config.lua")
+AddCSLuaFile("cl_rulesmenu.lua")
+
 include( "sh_config.lua" )
 include( "cl_rulesmenu.lua" )
 -- Commands --
 -- Creates our !rules command!
-resource.AddFile( "materials/vgui/garrysmod.png" ) -- Adds image for download!
+resource.AddFile( ImagePath ) -- Adds image for download!
 
 function OpenRulesMenuPlayerSay( ply, command, team )
 
