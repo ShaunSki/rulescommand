@@ -5,7 +5,7 @@
 --include( "shared.lua" )
 
 --Server + Border Config
-ServerName = "Rules" -- Put in your rules title / servername
+ServerName = "Aurora Sandbox Rules" -- Put in your rules title / servername
 ServerNameColor = Color( 0, 255, 0, 255 ) -- Red, Green, Blue, Transparency -- Your server name color!
 LineColor = Color( 0, 255, 0, 255 ) -- Red, Green, Blue, Transparency -- Color for the line underneath server name!
 BackgroundColor = Color( 0, 0, 0, 255 ) -- Red, Green, Blue, Transparency -- Color for the background!
@@ -16,15 +16,16 @@ ImagePath = "materials/vgui/garrysmod.png" -- Enter your image FilePath; e.g. ma
 
 -- Commands Config
 -- What to type to open the rules menu?
-OpenRulesOnJoin = false
+OpenRulesOnJoin = true
 OpenRulesPlayerSay = { "!rules", "/rules" }
 
 -- Rules Config
 -- Enter your rules below.
-RulesBackgroundColor = Color( 0, 0, 255, 255 )
-RulesColor = Color( 255, 255, 255, 255 ) -- Red, Green, Blue, Transparency -- Color of your rules!
+RulesBackgroundColor = Color( 0, 255, 242, 255 )
+RulesColor = Color( 0, 0, 0, 255 ) -- Red, Green, Blue, Transparency -- Color of your rules!
 Rules = [[
 1. No Propblocking/pushing/climbing.
 2. No RDMing.
 3. No being disrespectful.
+4. Don't beg for staff!
 ]]
