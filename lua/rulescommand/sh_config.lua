@@ -6,9 +6,9 @@
 
 --Server + Border Config
 ServerName = "Servers Rules" -- Put in your rules title / servername
-ServerNameColor = Color( 0, 255, 0, 255 ) -- Red, Green, Blue, Transparency -- Your server name color!
+ServerNameColor = Color( 255, 255, 255, 255 ) -- Red, Green, Blue, Transparency -- Your server name color!
 LineColor = Color( 255, 0, 0, 255 ) -- Red, Green, Blue, Transparency -- Color for the line underneath server name!
-BackgroundColor = Color( 120, 50, 120, 255 ) -- Red, Green, Blue, Transparency -- Color for the background!
+BackgroundColor = Color( 50, 50, 50, 255 ) -- Red, Green, Blue, Transparency -- Color for the background!
 
 -- Image Config
 -- Shows Image on rulesmenu.
@@ -22,8 +22,8 @@ OpenRulesPlayerSay = { "!rules", "/rules" }
 
 -- Rules Config
 -- Enter your rules below.
-RulesBackgroundColor = Color( 0, 150, 50, 255 ) -- Red, Green, Blue, Transparency -- Background Color of your rules!
-RulesColor = Color( 255, 0, 0, 255 ) -- Red, Green, Blue, Transparency -- Color of your rules!
+RulesBackgroundColor = Color( 255, 200, 150, 255 ) -- Red, Green, Blue, Transparency -- Background Color of your rules!
+RulesColor = Color( 255, 255, 255, 255 ) -- Red, Green, Blue, Transparency -- Color of your rules!
 Rules = [[
 1. No Propblocking/pushing/climbing.
 2. No RDMing.

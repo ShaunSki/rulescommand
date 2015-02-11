@@ -9,13 +9,11 @@ include( "rulescommand/cl_rulesmenu.lua" )
 resource.AddFile( ImagePath ) -- Adds image for download!
 
 function OpenRulesMenuPlayerSay( ply, command, team )
-
 	for k,v in pairs(OpenRulesPlayerSay) do
 		if command == v then
 			ply:ConCommand( "rules_menu" )
 		end
 	end
-
 end
 hook.Add( "PlayerSay", "OpenRulesMenuPlayerSay", OpenRulesMenuPlayerSay )
 
