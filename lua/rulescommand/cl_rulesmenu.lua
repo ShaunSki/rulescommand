@@ -24,7 +24,33 @@ function RulesMenu() -- Function!
 
 	local gmod_image = vgui.Create( "DImage", Frame ) -- Creating DImage as gmod_image for simples :)
 	gmod_image:SetPos( Frame:GetWide()/1.30+0, Frame:GetTall()/15+0 ) -- The position of the image.
-	gmod_image:SetSize( Frame:GetWide()/5+0, Frame:GetTall()/5+0 ) -- The size of the image.
+	gmod_image:SetSize( 250, 250 ) -- The size of the image.
 	gmod_image:SetImage( ImagePath ) -- Setting the image! duhh! changeable in the config.
+	
+	local button1 = vgui.Create( "DButton", Frame )
+	button1:SetText( Button1Text )
+	button1:SetTextColor( Button1TextColor )
+	button1:SetPos( Frame:GetWide()/3+0, Frame:GetTall()/1.045+0 )
+	button1:SetSize( 150, 30 )
+	button1.Paint = function( self, w, h )
+	draw.RoundedBox( 0, 0, 0, w, h, Button1BackgroundColor ) -- Draw a colorful button
+	end
+	button1.DoClick = function()
+	Frame:Close()
+	end
+	
+	local button2 = vgui.Create( "DButton", Frame )
+	button2:SetText( Button2Text )
+	button2:SetTextColor( Button2TextColor )
+	button2:SetPos( Frame:GetWide()/2+0, Frame:GetTall()/1.045+0 )
+	button2:SetSize( 150, 30 )
+	button2.Paint = function( self, w, h )
+	draw.RoundedBox( 0, 0, 0, w, h, Button2BackgroundColor ) -- Draw a colorful button
+	end
+	button2.DoClick = function()
+	Frame:Close()
+	RunConsoleCommand( "disconnect" )
+	end
+
 end
 concommand.Add( "rules_menu", RulesMenu ) -- Add the concommand!

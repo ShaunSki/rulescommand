@@ -5,7 +5,7 @@
 -- If you don't know the Decimal Colors use this website: http://www.rapidtables.com/web/color/RGB_Color.htm
 
 --Server + Border Config
-ServerName = "Servers Rules" -- Put in your rules title / servername
+ServerName = "Server Rules" -- Put in your rules title / servername
 ServerNameColor = Color( 255, 255, 255, 255 ) -- Red, Green, Blue, Transparency -- Your server name color!
 LineColor = Color( 255, 0, 0, 255 ) -- Red, Green, Blue, Transparency -- Color for the line underneath server name!
 BackgroundColor = Color( 50, 50, 50, 255 ) -- Red, Green, Blue, Transparency -- Color for the background!
@@ -36,3 +36,14 @@ Rules = [[
 -- Or you can add your own! -- If changing the font bugs something just hit me a message i'll happily help you out. 
 FontServerName = "DermaLarge"
 FontRules = "Trebuchet24"
+
+-- Button Config
+-- Button 1 Config!
+Button1TextColor = Color( 255, 255, 255, 255 )
+Button1BackgroundColor = Color( 0, 255, 0, 255 )
+Button1Text = "I agree to play by the rules!"
+
+-- Button 2 Config!
+Button2TextColor = Color( 255, 255, 255, 255 )
+Button2BackgroundColor = Color( 255, 0, 0, 255 )
+Button2Text = "I disagree to the rules!"
