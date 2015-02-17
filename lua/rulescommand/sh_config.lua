@@ -43,6 +43,15 @@ Button1TextColor = Color( 255, 255, 255, 255 )
 Button1BackgroundColor = Color( 0, 255, 0, 255 )
 Button1Text = "I agree to play by the rules!"
 
+-- Decline Config
+DeclineMessageEnable = true -- Writes a message to everyone saying that the person has declined the rules, the player will be kicked.
+DeclineLeaveTime = 3 -- How long it takes to kick the player after they hit the decline button.
+DeclineMessage = "I have declined the server rules and I am leaving the server in " .. DeclineLeaveTime .. " seconds." -- Decline message when someone declines the rules. Displays to ALL players.
+
+-- Accept Config
+AcceptMessageEnable = true -- Writes a message to everyone saying that the person has accepted the rules. -- If you're dead when you accept on TTT for example, you won't see the message. True / False
+AcceptMessage = "I have agreed to play by the server rules!" -- The message when someone accepts the server rules. Displays to ALL players.
+
 -- Button 2 Config!
 Button2TextColor = Color( 255, 255, 255, 255 )
 Button2BackgroundColor = Color( 255, 0, 0, 255 )

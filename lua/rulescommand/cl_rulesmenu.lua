@@ -10,7 +10,7 @@ function RulesMenu() -- Function!
 	Frame:SetTitle( ShaunSki ) -- Does it have a title?
 	Frame:SetVisible( true ) -- Is it visible?
 	Frame:SetDraggable( false ) -- Is it draggable?
-	Frame:ShowCloseButton( true ) -- Is it closable?
+	Frame:ShowCloseButton( false ) -- Is it closable? -- False because we have buttons that do this job.
 	Frame:MakePopup() -- Pop it up!
 	Frame:Center() -- Center of screen!
 	Frame.Paint = function()
@@ -36,7 +36,10 @@ function RulesMenu() -- Function!
 	draw.RoundedBox( 0, 0, 0, w, h, Button1BackgroundColor ) -- Draw a colorful button
 	end
 	button1.DoClick = function()
+	if AcceptMessageEnable == true then
 	Frame:Close()
+	RunConsoleCommand( "say", AcceptMessage )
+		end
 	end
 	
 	local button2 = vgui.Create( "DButton", Frame )
@@ -48,9 +51,13 @@ function RulesMenu() -- Function!
 	draw.RoundedBox( 0, 0, 0, w, h, Button2BackgroundColor ) -- Draw a colorful button
 	end
 	button2.DoClick = function()
+	if DeclineMessageEnable == true then
 	Frame:Close()
+	RunConsoleCommand( "say", DeclineMessage )
+	timer.Create( "Timer", DeclineLeaveTime, 1, function()
 	RunConsoleCommand( "disconnect" )
+			end )
+		end
 	end
-
 end
-concommand.Add( "rules_menu", RulesMenu ) -- Add the concommand!
+usermessage.Hook( "rules_menu", RulesMenu )

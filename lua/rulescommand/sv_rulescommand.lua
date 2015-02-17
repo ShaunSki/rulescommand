@@ -8,18 +8,27 @@ include( "rulescommand/cl_rulesmenu.lua" )
 -- Creates our !rules command!
 resource.AddFile( ImagePath ) -- Adds image for download!
 
+--PlayerSay Command
 function OpenRulesMenuPlayerSay( ply, command, team )
 	for k,v in pairs(OpenRulesPlayerSay) do
 		if command == v then
-			ply:ConCommand( "rules_menu" )
+			OpenRulesConsoleCommand( ply )
 		end
 	end
 end
 hook.Add( "PlayerSay", "OpenRulesMenuPlayerSay", OpenRulesMenuPlayerSay )
 
+-- Console Command
+function OpenRulesConsoleCommand( ply )
+	umsg.Start( "rules_menu", ply )
+	umsg.End()
+end
+concommand.Add( "rules_menu", OpenMotdOnConsoleCommand )
+
+-- Rules Open on Join
 function OpenRulesMenuOnJoin( ply )
 	if OpenRulesOnJoin == true then
-	ply:ConCommand( "rules_menu" )
+	OpenRulesConsoleCommand( ply )
 	end
 end
 hook.Add( "PlayerInitialSpawn", "OpenRulesMenuOnJoin", OpenRulesMenuOnJoin )
